@@ -8,5 +8,5 @@ inputs:
 runs:
   using: composite
   steps:
-    - run: "make -f ${{ inputs.args }}"
+    - run: "make ${{ inputs.args }}"
       shell: bash
