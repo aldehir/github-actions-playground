@@ -1,0 +1,12 @@
+name: Make
+description: Build project with make
+inputs:
+  args:
+    description: Arguments to make command
+    required: false
+    default: ""
+runs:
+  using: composite
+  steps:
+    - run: "make -f ${{ inputs.args }}"
+      shell: bash
